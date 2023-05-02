@@ -1,0 +1,30 @@
+.movie-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .movie-details img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-details-info {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .movie-details-info h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie-details-info p {
+    margin-bottom: 0.5rem;
+  }
+  

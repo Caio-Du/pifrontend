@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    opacity: 0.8;
+  }
+  
+  .navbar button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .navbar button:hover {
+    opacity: 0.8;
+  }
+  

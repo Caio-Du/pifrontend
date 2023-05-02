@@ -1,0 +1,43 @@
+.search-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .search-page form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-page input,
+  .search-page button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .search-page input {
+    border: 1px solid #ccc;
+  }
+  
+  .search-page button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .search-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
