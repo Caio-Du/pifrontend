@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
+import FeaturedMovieCard from './FeaturedMovieCard';
 import './Home.css';
-
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -17,11 +17,16 @@ const Home = () => {
     fetchData();
   }, []);
 
+  const featuredMovie = movies.length > 0 ? movies[0] : null;
+
   return (
-    <div className="movie-list">
-      {movies.map((movie) => (
-        <MovieCard key={movie.id} movie={movie} />
-      ))}
+    <div className="home">
+      {featuredMovie && <FeaturedMovieCard movie={featuredMovie} />}
+      <div className="movie-list">
+        {movies.slice(1).map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </div>
     </div>
   );
 };

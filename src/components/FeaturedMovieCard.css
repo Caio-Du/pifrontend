@@ -1,0 +1,36 @@
+.featured-movie-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featured-movie-image {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+  }
+  
+  .featured-movie-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .featured-movie-details {
+    flex: 2;
+    padding: 1rem;
+  }
+  
+  .featured-movie-details h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .featured-movie-details p {
+    margin-bottom: 0.5rem;
+  }
+  
